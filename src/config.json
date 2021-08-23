@@ -1,0 +1,5 @@
+{
+    "port": 80,
+    "databaseURL": "mongodb://localhost/users",
+    "debug": true
+}
