@@ -3,7 +3,7 @@ import path from "path";
 const mongoose = require('mongoose');
 const configuration = require('./config.json');
 const app = express();
-const port = configuration.port;
+const port = configuration.port || 80;
 const routers = require('./router');
 const ejs = require('ejs');
 
