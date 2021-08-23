@@ -5,8 +5,11 @@ const configuration = require('./config.json');
 const port = configuration.port;
 
 const model = mongoose.model("users", new mongoose.Schema({
-     Users: {
-      type: String,
+     UserObject: {
+      id: "1",
+      username: "rxsty",
+      bio: "para poly test",
+      type: String, // Gt sta parameters epistrefi string k dn mporo na to kanw number meta.
       required: true,
     }
 }))
