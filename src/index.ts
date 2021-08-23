@@ -10,7 +10,8 @@ const ejs = require('ejs');
 mongoose.connect(configuration.databaseURL, { 
   useNewUrlParser: true, 
   useFindAndModify: true, 
-  useUnifiedTopology: true }, async(error: any, info: any) =>{
+  useUnifiedTopology: true 
+}, async(error: any, info: any) =>{
     if(error) throw error;
     if(configuration.debug) console.log(`[DATABASE] Connected and listening at ${configuration.databaseURL}`);
 });
