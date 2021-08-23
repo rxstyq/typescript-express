@@ -2,7 +2,7 @@ import express from "express";
 const app = express();
 const mongoose = require('mongoose');
 const configuration = require('./config.json');
-const port = configuration.port;
+const port = configuration.port || 80;
 
 const model = mongoose.model("users", new mongoose.Schema({
      UserObject: {
